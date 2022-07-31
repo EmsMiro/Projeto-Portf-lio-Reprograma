@@ -1,0 +1,227 @@
+/*Estilos Gerais*/
+:root {
+    --color-primary-0: #9D5F39;
+    --color-primary-1: #FFAE7B;
+    --color-primary-2: #FFA064;
+    --color-primary-3: #FF6200;
+    --color-white: #FFFFFF;
+    --color-lightgrey: #C4C4C4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do Banner */
+
+.banner {
+    background: linear-gradient(#FFA064, #FF6200, #9D5F39);
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    padding: 5rem;
+    color: var(--color-white);
+}
+
+.memoji {
+    position: relative;
+    width: 20%;
+    height: 20%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+.banner__titulo {
+    font-size: 4rem;
+}
+
+.banner__subtitulo {
+
+    font-size: 2.3rem;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    margin-left: 30%;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.u-margin-bottom-peq {
+    margin-bottom: 2rem;
+}
+
+.btn-branco {
+    color: var(--color-primary-3);
+    background-color: var(--color-white);
+    box-shadow: 0 10px 20px rgba(250, 212, 163, 0.5);
+}
+
+
+.btn {
+    border-radius: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seção sobre*/
+
+.link-cmm:hover {
+    color: var(--color-primary-3);
+}
+
+.sobre__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.sobre__titulo {
+    font-size: 4rem;
+    color: var(--color-lightgrey);
+}
+
+.sobre__descricao-div {
+    width: 40%;
+    display: inline-block;
+
+}
+
+.sobre__descricao-texto {
+    font-size: 1.4rem;
+}
+
+.sobre__descricao-destaque {
+    font-size: 1.5rem;
+}
+
+.sobre__habilidades-div {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: 10rem;
+}
+
+.sobre__habilidades-titulo {
+    font-size: 2rem;
+}
+
+.sobre__habilidades-lista {
+    padding-left: 2rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+.btn-roxo {
+    color: var(--color-primary-0);
+    border: 1px solid var(--color-primary-2);
+    box-shadow: 0px 0px 0px 2px var(--color-primary-3);
+}
+
+.btn-roxo:hover {
+    color: var(--color-primary-3);
+
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* Seção Redes Sociais */
+
+.footer {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.redes__sociais-div {
+    margin-top: 10rem;
+}
+
+.redes__sociais-item {
+    display: inline-block;
+    width: 20%;
+    background-color: var(--color-primary-0);
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 80px;
+    transition: 1s;
+}
+
+.redes__sociais-item:hover {
+    transform: scale(0.8);
+}
+
+.redes__sociais-img {
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font: size 2.5rem;
+}
+
+.footer-p {
+    margin-top: 5%;
+}
+
+/*Media query*/
+
+@media(max-width: 600px) {
+
+    .banner {
+        background: linear-gradient(#FFA064, #FF6200, #9D5F39);
+        background-size: cover;
+        width: 80vw;
+        height: 60vh;
+        text-align: left;
+        padding: 2rem;
+        color: var(--color-white);
+    }
+}
